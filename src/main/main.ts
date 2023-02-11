@@ -116,6 +116,7 @@ const createWindow = async () => {
 /**
  * Add event listeners...
  */
+// for top menu window button functionality
 
 app.on('window-all-closed', () => {
   // Respect the OSX convention of having the application in memory even

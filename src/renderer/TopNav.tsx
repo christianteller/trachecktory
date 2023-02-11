@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+import { AppBar, Toolbar, IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import './TopNav.css';
 
 type Props = {};
@@ -14,11 +13,11 @@ export default class TopNav extends Component<Props, State> {
 
   render() {
     return (
-      <AppBar className="nm-1" position="sticky">
+      <AppBar className="nm-1 titlebar-drag" position="sticky">
         <Toolbar variant="dense">
-          <Typography variant="h6" component="div">
-            Photos
-          </Typography>
+          <IconButton id="close-app" className="titlebar-no-drag">
+            <CloseIcon color="primary" />
+          </IconButton>
         </Toolbar>
       </AppBar>
     );
