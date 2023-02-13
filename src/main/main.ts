@@ -82,6 +82,14 @@ const createWindow = async () => {
     },
   });
 
+  ipcMain.on('minimize', () => {
+    mainWindow?.minimize();
+  });
+
+  ipcMain.on('maximize', () => {
+    mainWindow?.maximize();
+  });
+
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
   mainWindow.on('ready-to-show', () => {

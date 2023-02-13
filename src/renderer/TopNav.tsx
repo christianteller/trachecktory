@@ -7,6 +7,7 @@ type Props = {};
 
 type State = {};
 
+// eslint-disable-next-line react/prefer-stateless-function
 export default class TopNav extends Component<Props, State> {
   // eslint-disable-next-line react/state-in-constructor
   state = {};
@@ -15,7 +16,11 @@ export default class TopNav extends Component<Props, State> {
     return (
       <AppBar className="nm-1 titlebar-drag" position="sticky">
         <Toolbar variant="dense">
-          <IconButton id="close-app" className="titlebar-no-drag">
+          <IconButton
+            onClick={window.close}
+            id="close-app"
+            className="titlebar-no-drag"
+          >
             <CloseIcon color="primary" />
           </IconButton>
         </Toolbar>
