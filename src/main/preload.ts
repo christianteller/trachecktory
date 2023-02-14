@@ -35,5 +35,6 @@ const electronHandler = {
 contextBridge.exposeInMainWorld('electron', electronHandler);
 contextBridge.exposeInMainWorld('minimize', () => ipcRenderer.send('minimize'));
 contextBridge.exposeInMainWorld('maximize', () => ipcRenderer.send('maximize'));
+contextBridge.exposeInMainWorld('confirm', () => ipcRenderer.send('confirm'));
 
 export type ElectronHandler = typeof electronHandler;

@@ -90,6 +90,10 @@ const createWindow = async () => {
     mainWindow?.maximize();
   });
 
+  ipcMain.on('confirm', () => {
+    mainWindow?.confirm();
+  });
+
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
   mainWindow.on('ready-to-show', () => {
