@@ -1,13 +1,15 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import MainForm from './MainForm';
+import MainPage from './MainPage';
 import TopNav from './TopNav';
 
 function Hello() {
+  const apiConfig = [{ url: 'test', clientId: }];
+
   return (
     <div>
       <TopNav />
-      <MainForm />
+      <MainPage />
     </div>
   );
 }

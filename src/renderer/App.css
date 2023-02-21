@@ -94,7 +94,8 @@ video {
 body {
   height: 100vh;
   background-color: #deddda;
-  background: url('/assets/dark-bg-1.jpg');
+  background: -webkit-linear-gradient(#000000ab, #31696663),
+    url('/assets/teal-dark-bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,7 +120,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
   opacity: 1;
 }
 

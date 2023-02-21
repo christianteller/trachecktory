@@ -1,10 +1,28 @@
 .nm-1 {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.1) !important;
+  padding: 3px !important;
+  background: #c5c6c71f !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
   backdrop-filter: blur(5.6px) !important;
   -webkit-backdrop-filter: blur(5.6px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  border: 1px solid #66fcf1 !important;
+}
+
+#close-app {
+  font-size: .2em !important;
+}
+
+.nav-action-buttons {
+  float: right !important;
+  padding-right: 0 !important;
+  border-radius: 102px !important;
+  background: linear-gradient(225deg, #C5C6C7, #415457) !important;
+  box-shadow:  -1px 1px 3px #66fcf2 ,
+               2px -2px 4px #000000;
+}
+
+.t-logo {
+  text-shadow: 2px 2px 1px #0B0C10 !important;
 }
 
 .titlebar-drag {
@@ -14,4 +32,9 @@
 
 .titlebar-no-drag {
   -webkit-app-region: no-drag;
+}
+
+#close-app {
+  padding: 2px !important;
+  margin-right: 10px !important;
 }

@@ -1,0 +1,19 @@
+.cntnr-1 {
+  height: 300px;
+  width: 300px;
+  position: relative;
+}
+
+.wf {
+  color: #C5C6C7;
+}
+
+.cntnr-2 {
+  padding-top: 1em;
+  width: 70vw;
+  height: 80vh;
+  position: absolute;
+  top: auto;
+  left: auto;
+  border: 1px solid red;
+}
